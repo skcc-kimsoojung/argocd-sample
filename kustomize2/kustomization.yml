@@ -1,0 +1,11 @@
+# configMapGenerator:
+# - name: example-configmap-1
+#   files:
+#   - application.properties
+
+resources:
+- deployment.yml
+configMapGenerator:
+- name: example-configmap-1
+  files:
+  - application.properties
